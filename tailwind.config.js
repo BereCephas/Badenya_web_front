@@ -9,10 +9,12 @@ export default {
       colors:{
         "beige":"#F7D08A",
         "marron":"#7C3626",
-        "mate":"#4B5262"
+        "mate":"#4B5262",
+        "blansale":"#FCDEBE"
         
       },
     },
+
   },
   plugins: [],
 }

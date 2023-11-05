@@ -12,11 +12,11 @@ const Header = () => {
 
     return (
         <div className='shadow-md w-full fixed h-15 z-30 '>
-           <div className='md:flex items-center justify-between bg-marron py-4 md:px-20 px-10'>
+           <div className='md:flex items-center justify-between bg-marron py-4  2xl:px-40 md:px-20 px-10'>
             {/* logo section */}
             <div className='font-bold text-2xl cursor-pointer flex items-center gap-1'>
                 {/* <BookOpenIcon className='w-7 h-7 text-blue-600'/> */}
-                <span className='text-white'>Lasalle</span>
+                <span className='text-white lg:text-3xl 2xl:text-4xl'>Lasalle</span>
             </div>
             {/* Menu icon */}
             <div onClick={()=>setOpen(!open)} className='absolute right-8 top-6 cursor-pointer md:hidden w-7 h-7'>
@@ -29,7 +29,7 @@ const Header = () => {
                 {
                     Links.map((link) => (
                     <li className='md:ml-8 md:my-0 my-7 font-semibold'>
-                        <a href={link.link} className='text-beige hover:text-blue-400 duration-500'>{link.name}</a>
+                        <a href={link.link} className='text-beige hover:text-blue-400 duration-500  lg:text-2xl 2xl:text-3xl'>{link.name}</a>
                     </li>))
                 }
                 {/* <button className='btn bg-blue-600 text-white md:ml-8 font-semibold px-3 py-1 rounded duration-500 md:static'>Get Started</button> */}
