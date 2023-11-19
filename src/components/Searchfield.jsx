@@ -5,7 +5,7 @@ import TextField from "@mui/material/TextField";
 import Stack from "@mui/material/Stack";
 import Autocomplete from "@mui/material/Autocomplete";
 import config from "../../config"; // Import the configuration file
-import { ClassNames } from "@emotion/react";
+import { Link } from "react-router-dom";
 
 export default function FreeSolo() {
   const [articles, setArticles] = useState([]);
@@ -29,13 +29,23 @@ export default function FreeSolo() {
 
     fetchArticles();
   }, []);
+
   return (
     <Stack spacing={2} sx={{ width: 300 }}>
       <Autocomplete
         id="free-solo-demo"
         freeSolo
-        options={articles.map((option) => option.title)}
+        options={articles.map((option) => ({
+          text: option.title,
+          link: `/blog/articles/${option.id}`, // Assurez-vous d'ajuster le lien selon votre structure d'URL
+        }))}
+        getOptionLabel={(option) => option.text}
         renderInput={(params) => <TextField {...params} label="rechercher" />}
+        renderOption={(props, option) => (
+          <li {...props}>
+            <Link to={option.link}>{option.text}</Link>
+          </li>
+        )}
       />
     </Stack>
   );

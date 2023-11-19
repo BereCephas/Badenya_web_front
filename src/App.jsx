@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Landing from "./pages/Landing";
+import Article from "./components/Article";
 
 import Blog from "./pages/Blog";
 
@@ -30,6 +31,7 @@ function App() {
         <Routes>
           <Route index element={<Landing />}></Route>
           <Route path="/blog" element={<Blog />}></Route>
+          <Route path="/blog/articles/:id" element={<Article />}></Route>
         </Routes>
       </BrowserRouter>
     </div>

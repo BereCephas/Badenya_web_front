@@ -7,10 +7,10 @@ import {
 
 const Header = () => {
   let Links = [
-    { name: "Accueil", link: "/" },
-    { name: "A propos", link: "/" },
-    { name: "Vie scolaire", link: "/" },
-    { name: "Blog", link: "/" },
+    { name: "Accueil", link: "/Accueil" },
+    { name: "A propos", link: "/apropos" },
+    { name: "Vie scolaire", link: "/viescolaire" },
+    { name: "Blog", link: "/blog" },
   ];
   let [open, setOpen] = useState(false);
 

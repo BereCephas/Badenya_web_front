@@ -7,7 +7,9 @@ const Blog = () => {
       <Header />
       <div className="Banner">
         <div className="bg-beige h-[40vh] w-full pt-16 px-16 flex flex-col  items-center justify-center text-bleu">
-          <h1 className=" pb-5 font-bold text-4xl">Le blog de Badenya</h1>
+          <h1 className=" pb-5 font-bold text-4xl text-center">
+            Le blog de Badenya
+          </h1>
           <p className="text-sm text-extralight text-center pb-5">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto,
             ipsam? Quo dolorum
