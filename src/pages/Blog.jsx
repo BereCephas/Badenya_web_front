@@ -5,8 +5,8 @@ const Blog = () => {
   return (
     <>
       <Header />
-      <div className="Banner">
-        <div className="bg-beige h-[40vh] w-full pt-16 px-16 flex flex-col  items-center justify-center text-bleu">
+      <div className="Banner pb-10">
+        <div className="bg-beige h-[45vh] w-full pt-16 px-16 flex flex-col  items-center justify-center text-bleu ">
           <h1 className=" pb-5 font-bold text-4xl text-center">
             Le blog de Badenya
           </h1>
@@ -16,8 +16,8 @@ const Blog = () => {
           </p>
           <Searchfield />
         </div>
+        <Articles />
       </div>
-      <Articles />
     </>
   );
 };
