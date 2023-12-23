@@ -1,6 +1,7 @@
 import Header from "../components/Header";
 import Articles from "../components/Articles";
 import Searchfield from "../components/Searchfield";
+import Footer from "../components/Footer";
 const Blog = () => {
   return (
     <>
@@ -18,6 +19,7 @@ const Blog = () => {
         </div>
         <Articles />
       </div>
+      <Footer />
     </>
   );
 };

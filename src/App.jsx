@@ -10,6 +10,7 @@ import Article from "./components/Article";
 import Aboutus from "./pages/About";
 import Viescolaire from "./pages/Viescolaire";
 import Blog from "./pages/Blog";
+import Programme from "./pages/Programmes";
 
 import {
   createBrowserRouter,
@@ -31,6 +32,7 @@ function App() {
           <Route path="/blog/articles/:id" element={<Article />}></Route>
           <Route path="/apropos" element={<Aboutus />}></Route>
           <Route path="/viescolaire" element={<Viescolaire />}></Route>
+          <Route path="/programme" element={<Programme />}></Route>
         </Routes>
       </BrowserRouter>
     </div>

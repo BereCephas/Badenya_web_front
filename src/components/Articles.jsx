@@ -4,6 +4,7 @@ import * as TextField from "@radix-ui/themes/styles.css";
 import { MagnifyingGlassIcon } from "@radix-ui/react-icons";
 import config from "../../config"; // Import the configuration file
 import Searchfield from "../components/Searchfield";
+import Footer from "./Footer";
 // import Card from "./Card";
 import { Link } from "react-router-dom";
 

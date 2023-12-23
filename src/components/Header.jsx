@@ -8,7 +8,8 @@ import {
 const Header = () => {
   let Links = [
     { name: "Accueil", link: "/" },
-    { name: "A propos", link: "/apropos" },
+    { name: "Programme", link: "/programme" },
+
     { name: "Vie scolaire", link: "/viescolaire" },
     { name: "Blog", link: "/blog" },
   ];
