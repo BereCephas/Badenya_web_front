@@ -1,5 +1,5 @@
 import Header from "../components/Header";
-import MouvementCard from "../components/MouvementCArd";
+import MouvementCard from "../components/MouvementCard";
 import Footer from "../components/Footer";
 import React, { useEffect, useState } from "react";
 import { createClient } from "@supabase/supabase-js";
